@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Quiz app</title>
+</head>
+
+<body>
+  <section class="login--section section--1">
+    <div class="welcome--section">
+      <h1 class="welcome--message">Welcome to <span>Soligon</span><br class="line-break"> Quiz App</h1>
+      <form action="" class="input-icons">
+        <div class="input-container"> <i class="fa fa-user-circle-o icon"></i> <input type="text" name="fullName"
+            id="full-name" placeholder="Name" class="input-field name-input" required></div>
+
+        <div class="input-container"> <i class="fa fa-lock icon"></i> <input type="password" name="password"
+            id="password" placeholder="password" class="input-field"></div>
+
+        <div class="input-container"> <i class="fa fa-user-circle-o icon"></i> <input type="text" name="nick-name"
+            id="nickname" placeholder="nickName" class="input-field nickname-input" required></div>
+
+        <div class="input-field gender-field"><label for=""><input type="radio" name="gender" id="male" value="male"
+              class="gender-radio">Male</label>
+          <label for=""><input type="radio" name="gender" id="female" value="female" class="gender-radio"
+              required>Female</label>
+        </div>
+
+        <div class="login-btn-container"><input type="submit" value="login" class="input-field login-btn"></div>
+      </form>
+
+    </div>
+
+    <div class="login-image-container">
+      <img src="../images/undraw_mobile_login_re_9ntv.svg" alt="" class="login-image">
+    </div>
+
+  </section>
+
+  <div class="section--2 hidden">
+    <div class="section-2-sub-div">
+      <h2 class="welcome-text">Hey <span class="name">ugonna</span> </h2>
+      <p class="message">Good luck! Stop worrying and start doing your best<br> to show them that you know
+        everything!<br> You are
+        prepared for
+        this exam, no need to be scared. <br>I believe in you and your knowledge.</p>
+      <button class="start-quiz-button">Start Quiz</button>
+    </div>
+    <img src="images/undraw_well_done_re_3hpo.svg" alt="" class="welldone-img">
+  </div>
+
+
+
+  <main class="section--3 hidden">
+    <div class="progress-container"><label for="file">progress:</label><br>
+      <progress id="file" value="1" max="14"></progress>
+    </div>
+    <div class="container"></div>
+
+
+
+
+  </main>
+
+
+  <section class="section--4">
+    <img src="images/congrats.svg" alt="" class="congrats-img">
+    <div class="completed-div">
+      <p>Thank you <span class="completed-name">ugonna</span> for completing the <strong>Soligon Quiz</strong></p>
+      <h4>You scored <span class="completed-score">0</span> out of <span class="total-score">9</span> questions</h4>
+      <meter value="7" optimum="7" min="0" max="14"></meter>
+
+
+
+      <button class="play-again">Play Again</button>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
